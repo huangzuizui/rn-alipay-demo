@@ -1,0 +1,5 @@
+rootProject.name = 'alipayDemo'
+
+include ':app'
+include ':rn-alipay'  // <- add
+project(':rn-alipay').projectDir = new File(settingsDir, '../node_modules/rn-alipay/android')  // <- add
